@@ -29,4 +29,11 @@ function criarMenu(disciplina){
 
 }
 
+// const produtos = [
+//     {nome: 'Nike Dri-FIT',     descricao: 'Camiseta de desempenho com tecnologia que mantém o corpo seco durante o treino.',       cor: ''},
+//     {nome: 'Nike Sportswear',  descricao: 'Camiseta casual, confortável, com logo estampado e tecido de algodão.',                 cor: ''},
+//     {nome: 'Nike Pro',         descricao: 'Camiseta justa e elástica, ideal para treinos intensos, com suporte e secagem rápida.', cor: ''},
+// ]
+
+
 disciplinas.forEach(criarMenu)

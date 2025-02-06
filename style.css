@@ -40,3 +40,45 @@ a{
 .menu img{
     height: 16px;
 }
+
+.menu{
+    background-color: black;
+}
+/*------------------------------------------------------------*/
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+
+    height: 500px;
+    width: 350px;
+    border: 1px solid black;
+}
+
+.texto {
+    
+    justify-content: center;
+    display: flex;
+    font-size: 15px;
+    border: solid black;
+}
+
+.descricao{
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem img{
+    height: 100px;
+    width: 100px;
+
+}
+
+
+
