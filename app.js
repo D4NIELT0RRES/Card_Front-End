@@ -1,10 +1,10 @@
 "use strict"
 
 const disciplinas = [
-    {nome:'PPDM', icon: 'internet.png', cor: 'yellow'},
-    {nome:'PRO' , icon: 'rede.png',     cor: 'tomato'},
-    {nome:'PWBE', icon: 'web.png',      cor: 'blue'},
-    {nome:'PWFE', icon: 'webcam.png',   cor:'purple'}
+    {nome:'PPDM', icon: 'mobile.png', cor: 'yellow'},
+    {nome:'PRO' , icon: 'projetos.png',     cor: 'tomato'},
+    {nome:'PWBE', icon: 'back-end.png',      cor: 'blue'},
+    {nome:'PWFE', icon: 'front-end.png',   cor:'purple'}
 ]
 
 function criarMenu(disciplina){

@@ -38,7 +38,7 @@ a{
     background-color: var(--cor-hover);
 }
 .menu img{
-    height: 16px;
+    height: 25px;
 }
 
 .menu{
@@ -48,36 +48,80 @@ a{
 .container{
     height: 100vh;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    
 }
 
 .card{
 
     height: 500px;
     width: 350px;
-    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-right-radius: 70px;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .texto {
     
-    justify-content: center;
+    padding: 10px;
     display: flex;
-    font-size: 15px;
-    border: solid black;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .descricao{
-    color: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 15px;
+    width: 98%;
+    color: black;
 }
 
 .imagem img{
     height: 100px;
     width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: blue 0px 0px 5px;
+}
+.modificacoes{
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 300px;
+    gap: 5px;
+}
 
+.valor{
+
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+.subtitulo{
+    font-size: 15px;
+    color: black;
+}
+
+.carrinho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.carrinho h1{
+    background-color: aqua;
 }
 
 
