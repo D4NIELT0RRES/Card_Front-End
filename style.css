@@ -45,18 +45,17 @@ a{
     background-color: black;
 }
 /*------------------------------------------------------------*/
-.container{
+
+.container {
     height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    
 }
 
-.card{
-
+.card {
     height: 500px;
     width: 350px;
     background-color: white;
@@ -67,10 +66,10 @@ a{
     border-top-left-radius: 70px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .texto {
-    
     padding: 10px;
     display: flex;
     text-align: center;
@@ -78,21 +77,24 @@ a{
     flex-direction: column;
 }
 
-.descricao{
+.descricao {
     font-size: 15px;
     width: 98%;
     color: black;
+    text-align: center;
 }
 
-.imagem img{
+.imagem img {
     height: 100px;
     width: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: blue 0px 0px 5px;
+    box-shadow: 0 0 5px blue;
+    border-radius: 50%;
 }
-.modificacoes{
+
+.modificacao {
     height: 100%;
     margin-top: 20px;
     display: flex;
@@ -100,29 +102,46 @@ a{
     justify-content: start;
     width: 300px;
     gap: 5px;
+    text-align: center;
 }
 
-.valor{
-
-    font-family: Arial, Helvetica, sans-serif;    
+.valor {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #333;
 }
 
-.subtitulo{
+.subtitulo {
     font-size: 15px;
     color: black;
 }
 
-.carrinho{
+.periodo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.periodo p {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.carrinho {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 50px;
     width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
 }
 
-.carrinho h1{
-    background-color: aqua;
+.carrinho h1 {
+    color: white;
+    font-size: 18px;
 }
-
-
-
