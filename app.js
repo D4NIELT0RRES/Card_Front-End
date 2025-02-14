@@ -55,7 +55,7 @@ const produto = [
     {
         nome:'Projetos',
         descricao:'Domine metodologias ágeis (Scrum, Kanban) e ferramentas como Trello e Jira.',
-        photo:'kotlin.png',
+        photo:'manager.png',
         valor:'R$169,90',
         duracao:'Duração',
         modulos: ['M1','M2','M3','M4'],
@@ -65,7 +65,7 @@ const produto = [
     {
         nome:'Mobile',
         descricao:'Crie apps para Android e iOS com Flutter, React Native, Swift ou Kotlin.',
-        photo:'android.png',
+        photo:'kotlin.png',
         valor:'R$219,90',
         duracao:'Duração',
         modulos: ['M1','M2','M3','M4'],
