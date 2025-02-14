@@ -45,7 +45,6 @@ a{
     background-color: black;
 }
 /*------------------------------------------------------------*/
-
 .container {
     height: 100vh;
     display: flex;
@@ -53,20 +52,43 @@ a{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    background: linear-gradient(135deg, #f5f5f5, #e0e0e0); /* Gradiente suave no fundo */
 }
 
 .card {
     height: 500px;
     width: 350px;
-    background-color: white;
+    background: linear-gradient(135deg, #ffffff, #f9f9f9); /* Gradiente no card */
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    box-shadow: 0 5px 10px black;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Para esconder o overflow do efeito de brilho */
+    position: relative; /* Para posicionar o efeito de brilho */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Efeito de brilho ao passar o mouse */
+.card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.card:hover::before {
+    opacity: 1;
 }
 
 .texto {
@@ -75,14 +97,15 @@ a{
     text-align: center;
     align-items: center;
     flex-direction: column;
-    color: blue;
-    
+    color: #1a73e8;
+    z-index: 1; /* Para garantir que o texto fique acima do efeito de brilho */
 }
 
 .descricao {
     font-size: 12px;
-    color: black;
+    color: #555;
     text-align: center;
+    margin-top: 10px;
 }
 
 .imagem img {
@@ -91,10 +114,16 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 5px blue;
+    box-shadow: 0 0 15px rgba(26, 115, 232, 0.6);
     border-radius: 50%;
     margin-top: 15px;
-    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1; /* Para garantir que a imagem fique acima do efeito de brilho */
+}
+
+.imagem img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(26, 115, 232, 0.8);
 }
 
 .modificacao {
@@ -106,6 +135,7 @@ a{
     width: 300px;
     gap: 5px;
     text-align: center;
+    z-index: 1; /* Para garantir que o conteúdo fique acima do efeito de brilho */
 }
 
 .valor {
@@ -113,14 +143,22 @@ a{
     font-size: 20px;
     margin-top: 20px;
     color: #333;
-    border: solid rgb(238, 238, 238)
+    border: solid #eee;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.valor:hover {
+    background-color: #1a73e8;
+    color: white;
 }
 
 .subtitulo {
-    
     font-size: 10px;
     margin-top: 30px;
-    color: rgb(0, 0, 0);
+    color: #000;
 }
 
 .periodo {
@@ -134,6 +172,12 @@ a{
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.periodo p:hover {
+    background-color: #1a73e8;
+    color: white;
 }
 
 .carrinho {
@@ -142,13 +186,25 @@ a{
     align-items: center;
     height: 80px;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: #1a73e8;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1; /* Para garantir que o botão fique acima do efeito de brilho */
 }
 
 .carrinho h1 {
     color: white;
     font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.carrinho:hover {
+    background-color: #1557b3;
+    transform: scale(1.05);
+}
+
+.carrinho:hover h1 {
+    transform: scale(1.1);
 }
